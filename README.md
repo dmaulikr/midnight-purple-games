@@ -1,1 +1,1 @@
-# midnight-purple-games
+# Midnight Purple Games
