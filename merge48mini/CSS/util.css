@@ -1,0 +1,37 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+input, textarea {
+    -webkit-user-select: text;
+}
+
+.scroller-x {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroller-y {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroller {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.large_menu {
+    display: none;
+}

@@ -1,0 +1,172 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Avenir-Book";
+}
+
+#admin_button {
+    display: none;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    padding-left: 10px;
+    color: #444 !important;
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    border: 1px solid rgba(0, 0, 0, 0.0) !important;
+    box-shadow: none !important;
+    -webkit-user-select: text;
+}
+
+.create_title {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.create_content {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 350px;
+    font-style: italic;
+}
+
+.create_input_holder {
+    width: 50%;
+    height: 60px;
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+.create_input_holder.button_down {
+    background-color: #ccc;
+}
+
+.whynone {
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.whynone.button_down {
+    opacity: 0.7;
+}
+
+/* ----- portrait - iPad Mini ----- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1000px) {
+    .create_title {
+        margin-top: 100px;
+    }
+    
+    .create_content {
+        margin-bottom: 230px;
+    }
+    
+    .whynone {
+        margin-top: 50px;
+    }
+}
+
+/* ----- portrait - iPhone 6 ----- */
+@media only screen and (min-device-width : 375px) and (min-device-height: 559px) and (max-device-width: 767px) {
+    .create_title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 1.7em;
+    }
+    
+    .create_content {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 130px;
+        font-style: italic;
+    }
+    
+    .create_input_holder {
+        width: 70%;
+        height: 50px;
+        margin-left: 15%;
+        border-radius: 10px;
+    }
+    
+    .whynone {
+        text-align: center;
+        margin-top: 40px;
+        padding: 50px;
+    }
+}
+
+/* ----- portrait - iPhone 6 Plus----- */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (max-device-width: 767px) {
+    .create_title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 1.7em;
+    }
+    
+    .create_content {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 130px;
+        font-style: italic;
+    }
+    
+    .create_input_holder {
+        width: 70%;
+        height: 50px;
+        margin-left: 15%;
+        border-radius: 10px;
+    }
+    
+    .whynone {
+        text-align: center;
+        margin-top: 40px;
+        padding: 50px;
+    }
+}
+
+/* ----- portrait - iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) {
+    .create_title {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 1.7em;
+    }
+    
+    .create_content {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-style: italic;
+    }
+    
+    .create_input_holder {
+        width: 70%;
+        height: 50px;
+        margin-left: 15%;
+        border-radius: 10px;
+    }
+    
+    .whynone {
+        text-align: center;
+        margin-top: 0px;
+        padding: 50px;
+    }
+}

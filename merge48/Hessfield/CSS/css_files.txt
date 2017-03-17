@@ -1,0 +1,17 @@
+main_menu
+main_stats
+main_settings
+main_request
+main_addusername
+main_search
+main_currentgames
+main_previousopponents
+main_game_one
+main_game_two
+main_over_one
+main_over_two
+style
+fonts
+numbers
+submenu
+util

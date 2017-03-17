@@ -1,0 +1,199 @@
+
+<!-- menus -->
+
+<div id="main_noconnection" class="large_menu">
+    <div class="mini_title">No Network Connection</div>
+    <div class="mini_content">You must be connected to wifi or cellular data to play this game. </div>
+    <div id="retry_button" class="square_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[retryConnection])">retry</div>
+</div>
+
+<div id="main_menu">
+    <div id="splash" class="splash_title splash_title_animation">Merge 48</div>
+    
+    <div class="fancy_button_holder">
+        <div class="icon-grid fancy_button" navigation="menu-gameone" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward,removeStartAnimation,startGame])"> classic</div>
+        <div class="icon-dash fancy_button" navigation="menu-gameone" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward,removeStartAnimation,startGame,startTimer])"> dash</div>
+        <div id="admin_button" class="icon-person fancy_button" navigation="menu-admin" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[openAdmin,navigateForward,removeStartAnimation])"> admin</div>
+        <div class="icon-settings fancy_button" navigation="menu-settings" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward,removeStartAnimation])"> settings</div>
+        <div class="icon-instructions fancy_button" navigation="menu-instructions" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward,removeStartAnimation])"> instructions</div>
+        <div class="icon-stats fancy_button" navigation="menu-createusername" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateToStats,removeStartAnimation])"> high scores</div>
+    </div>
+    
+    <div id="company" class="company company_animation">Midnight Purple Games</div>
+</div>
+
+<div id="main_createusername" class="large_menu">
+    <div class="icon-thinback back_button" navigation="createusername-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="create_title">create username</div>
+    <form class="create_input_holder" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[focusCreate])" action="javascript:saveUserName(null);">
+        <input id="create_input" autocorrect="off" autocomplete="off" autocapitalize="off" type="text" placeholder="username" />
+    </form>
+    <div id="create_err" class="create_content">this will be displayed on the high score list</div>
+    <div class="square_button" navigation="createusername-stats" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[saveUserName])">create account</div>
+    <div class="whynone" navigation="createusername-whynone" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])">why no password?</div>
+</div>
+
+<div id="main_noicloud" class="large_menu">
+    <div class="icon-thinback back_button" navigation="noicloud-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="mini_title">iCloud not enabled</div>
+    <div class="mini_content">You must go to your device settings and sign in to your iCloud account to save and see high scores. Then reboot the game and click high scores.</div>
+</div>
+
+<div id="main_whynone" class="large_menu">
+    <div class="icon-thinback back_button" navigation="whynone-createusername" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="mini_title">no password needed</div>
+    <div class="mini_content">You are already logged in thru iCloud on your device. We just need a username that will be displayed for others to see on the high score lists. This also means all of your scores will automatically be on all your iOS devices that are logged in to the same iCloud.<br/><br/>We might also use this username in the future in multiplayer games.</div>
+</div>
+
+<div id="main_stats" class="large_menu">
+    <div class="icon-thinback back_button" navigation="stats-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="tab_item" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[showMeStats])">me</div>
+    <div class="tab_item selected_tab" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[showAllStats])">all</div>
+    <div id="me_stats">
+        <div class="mini_title">classic high score</div>
+        <div id="high_score" class="mini_content">0</div>
+        <div class="mini_title">dash high score</div>
+        <div id="dash_high_score" class="mini_content">0</div>
+        <div class="mini_title">total time spent playing</div>
+        <div id="total_time_str" class="mini_content">0</div>
+    </div>
+    <div id="all_stats">
+        <div class="mini_title">classic top 10 global players</div>
+        <div id="cl_high_score_data" class="all_scores_holder">
+            <div class="score_item">
+                <div class="item_name">loading</div>
+                <div class="item_score">...</div>
+            </div>
+        </div>
+        <div class="mini_title">dash top 10 global players</div>
+        <div id="high_score_data" class="all_scores_holder">
+            <div class="score_item">
+                <div class="item_name">loading</div>
+                <div class="item_score">...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="main_admin" class="large_menu">
+    <div class="icon-thinback back_button" navigation="admin-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="mini_title">everyone total hours</div>
+    <div id="ev_total_hours" class="mini_content"></div>
+</div>
+
+<div id="main_settings" class="large_menu">
+    <div class="icon-thinback back_button" navigation="settings-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="mini_title">theme</div>
+    <div id="set_light" class="settings_item" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[setLight])">light</div>
+    <div id="set_dark" class="settings_item" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[setDark])">dark</div>
+    <div class="mini_title">music</div>
+    <div id="set_musicon" class="settings_item" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[setMusicOn])">on</div>
+    <div id="set_musicoff" class="settings_item" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[setMusicOff])">off</div>
+</div>
+
+<div id="main_request" class="large_menu">
+    <div class="back_button" navigation="request-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])">back to menu</div>
+</div>
+
+<div id="main_instructions" class="large_menu">
+    <div class="icon-thinback back_button" navigation="instructions-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])"> back</div>
+    <div class="mini_title">classic</div>
+    <div class="mini_content">Drag a block from the bottom of the screen onto the grid. Place a block beside another block of the same value to merge them. For example, a two placed beside another two will merge together and make four.</div>
+    <div class="mini_title">dash</div>
+    <div class="mini_content">Dash is the same as classic, except that you only have one minute to get your highest score.</div>
+</div>
+
+<div id="main_search" class="large_menu"></div>
+
+<div id="main_currentgames" class="large_menu"></div>
+
+<div id="main_previousopponents" class="large_menu"></div>
+
+<!-- games -->
+
+<div id="main_gameone" class="large_menu">
+    <div class="score_holder">
+        <span class="label">score</span>
+        <div id="score">0</div>
+    </div>
+    
+    <div id="timer" class="timer_holder">
+        <span id="timer_value" class="timer">1:00</span>
+    </div>
+    
+    <div class="coins_holder">
+        <span class="label">coins</span>
+        <div id="coins">0</div>
+    </div>
+    
+    <div class="grid_holder">
+        <div id="grid_1_1" class="grid_item" row="1" col="1"></div><div id="grid_1_2" class="grid_item" row="1" col="2"></div><div id="grid_1_3" class="grid_item" row="1" col="3"></div><div id="grid_1_4" class="grid_item" row="1" col="4"></div>
+        
+        <div id="grid_2_1" class="grid_item" row="2" col="1"></div><div id="grid_2_2" class="grid_item" row="2" col="2"></div><div id="grid_2_3" class="grid_item" row="2" col="3"></div><div id="grid_2_4" class="grid_item" row="2" col="4"></div>
+        
+        <div id="grid_3_1" class="grid_item" row="3" col="1"></div><div id="grid_3_2" class="grid_item" row="3" col="2"></div><div id="grid_3_3" class="grid_item" row="3" col="3"></div><div id="grid_3_4" class="grid_item" row="3" col="4"></div>
+        
+        <div id="grid_4_1" class="grid_item" row="4" col="1"></div><div id="grid_4_2" class="grid_item" row="4" col="2"></div><div id="grid_4_3" class="grid_item" row="4" col="3"></div><div id="grid_4_4" class="grid_item" row="4" col="4"></div>
+        
+<!--        <div id="grid_1_1" class="grid_item" row="1"bgcolor="2" col="1"></div><div id="grid_1_2" class="grid_item" row="1"bgcolor="4" col="2"></div><div id="grid_1_3" class="grid_item" row="1"bgcolor="8" col="3"></div><div id="grid_1_4" class="grid_item" row="1"bgcolor="16" col="4"></div>-->
+<!--        -->
+<!--        <div id="grid_2_1" class="grid_item" row="2"bgcolor="32" col="1"></div><div id="grid_2_2" class="grid_item" row="2"bgcolor="64" col="2"></div><div id="grid_2_3" class="grid_item" row="2"bgcolor="128" col="3"></div><div id="grid_2_4" class="grid_item" row="2"bgcolor="256" col="4"></div>-->
+<!--        -->
+<!--        <div id="grid_3_1" class="grid_item" row="3"bgcolor="512" col="1"></div><div id="grid_3_2" class="grid_item" row="3"bgcolor="1024" col="2"></div><div id="grid_3_3" class="grid_item" row="3"bgcolor="2048" col="3"></div><div id="grid_3_4" class="grid_item" row="3"bgcolor="" col="4"></div>-->
+<!--        -->
+<!--        <div id="grid_4_1" class="grid_item" row="4"bgcolor="" col="1"></div><div id="grid_4_2" class="grid_item" row="4"bgcolor="" col="2"></div><div id="grid_4_3" class="grid_item" row="4"bgcolor="" col="3"></div><div id="grid_4_4" class="grid_item" row="4"bgcolor="" col="4"></div>-->
+    </div>
+    
+    <div class="menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[openBottomMenu])">
+        <span class="icon-menu"></span>
+    </div>
+    
+    <div id="refresh" class="refresh_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[refreshBlock])">
+        <span class="icon-refresh"></span>
+    </div>
+    
+    <div id="next_piece_holder">
+        <div id="next_piece" class="grid_item" ontouchstart="pickUpNextPiece(event)" ontouchmove="dragNextPiece(event)" ontouchend="dropNextPiece(event)"></div>
+    </div>
+</div>
+
+<div id="main_overone" class="large_menu">
+    <div class="title">GAME OVER</div>
+    <div id="ending_score">0</div>
+    <div id="coin_gains">0</div>
+    <div class="square_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[sendText])">CHALLENGE</div>
+    <div class="square_button" navigation="overone-menu" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[navigateForward])">MAIN MENU</div>
+    <div id="play_again_button" class="square_button" navigation="overone-gameone" ontouchstart="pressButtonNow(this)" ontouchend="">PLAY AGAIN</div>
+</div>
+
+<div id="main_gametwo" class="large_menu">game for two</div>
+
+<div id="main_overtwo" class="large_menu">game over for two</div>
+
+<div id="bottom_menu" class="closed">
+    <div class="item bordered" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[exitGame])">exit game</div>
+    <div class="item bordered" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[closeBottomMenu,showPurchaseBoxWithoutProblem])">buy more coins</div>
+    <div class="item" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[closeBottomMenu])">cancel</div>
+</div>
+
+<div id="info_box" class="info_box">
+    <div id="info_text" class="info_text"></div>
+    <div class="ok_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[hideInfoBox])">ok</div>
+</div>
+
+<div id="purchase_box" class="info_box">
+    <div id="purchase_description" class="info_text"></div>
+    <div class="product_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[buySmallCoinPackage])">
+        <div class="package_size">small coin package</div>
+        <div class="price">add 1000 coins for $0.99</div>
+    </div>
+    <div class="product_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[buyLargeCoinPackage])">
+        <div class="package_size">large coin package</div>
+        <div class="price">add 5000 coins for $1.99</div>
+    </div>
+<!--    <div class="product_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[buyUnlimitedCoins])">-->
+<!--        <div class="package_size">unlimited coins</div>-->
+<!--        <div class="price">unlimited coins for $0.99 / month</div>-->
+<!--    </div>-->
+    <div class="ok_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,[hidePurchaseBox])">cancel</div>
+</div>

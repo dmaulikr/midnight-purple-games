@@ -1,0 +1,232 @@
+
+<div id="main_scorecard" class="image-golf_blur">
+
+    <div id="main_menu">
+        <div class="menu_title">Mini Golf Score Card</div>
+        <div class="menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,newScoreCard)">9 holes</div>
+        <div class="menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,newScoreCard)">18 holes</div>
+        <div class="menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,sendText)">Tell A Friend</div>
+    </div>
+
+    <div id="name_entry">
+        <div class="name_entry_title">enter up to five player names</div>
+        <div class="name_input_holder">
+            <div class="name_input_style" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,focusNameInput1)">
+                <input id="name_input_box_1" class="name_input_box" autocorrect="off" autocomplete="off" type="text" onkeyup="nameInputKeyUp(this, event)" placeholder="player name">
+            </div>
+        </div>
+        <div class="name_input_holder">
+            <div class="name_input_style" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,focusNameInput2)">
+                <input id="name_input_box_2" class="name_input_box" autocorrect="off" autocomplete="off" type="text" onkeyup="nameInputKeyUp(this, event)" placeholder="player name">
+            </div>
+        </div>
+        <div class="name_input_holder">
+            <div class="name_input_style" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,focusNameInput3)">
+                <input id="name_input_box_3" class="name_input_box" autocorrect="off" autocomplete="off" type="text" onkeyup="nameInputKeyUp(this, event)" placeholder="player name">
+            </div>
+        </div>
+        <div class="name_input_holder">
+            <div class="name_input_style" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,focusNameInput4)">
+                <input id="name_input_box_4" class="name_input_box" autocorrect="off" autocomplete="off" type="text" onkeyup="nameInputKeyUp(this, event)" placeholder="player name">
+            </div>
+        </div>
+        <div class="name_input_holder">
+            <div class="name_input_style" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,focusNameInput5)">
+                <input id="name_input_box_5" class="name_input_box" autocorrect="off" autocomplete="off" type="text" onkeyup="nameInputKeyUp(this, event)" placeholder="player name">
+            </div>
+        </div>
+        <div class="name_entry_back" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,backToMenu)">back</div><div class="name_entry_save" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,storeNames)">save</div>
+    </div>
+    
+    <div id="archive">
+        coming soon!
+    </div>
+    
+    <div id="nine_holes">
+        <div class="names_holder">
+            <div class="mini_menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,openMiniMenu)">exit</div>
+            <div class="name_item"><div id="name_item_5" class="sideways_name"></div></div>
+            <div class="name_item"><div id="name_item_4" class="sideways_name"></div></div>
+            <div class="name_item"><div id="name_item_3" class="sideways_name"></div></div>
+            <div class="name_item"><div id="name_item_2" class="sideways_name"></div></div>
+            <div class="name_item"><div id="name_item_1" class="sideways_name"></div></div>
+        </div>
+        <div class="holes_holder">
+            <div class="hole_item">
+                <div class="hole_label">1</div>
+                <div id="grid_1_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_1_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_1_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_1_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_1_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">2</div>
+                <div id="grid_2_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_2_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_2_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_2_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_2_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">3</div>
+                <div id="grid_3_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_3_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_3_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_3_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_3_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">4</div>
+                <div id="grid_4_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_4_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_4_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_4_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_4_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">5</div>
+                <div id="grid_5_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_5_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_5_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_5_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_5_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">6</div>
+                <div id="grid_6_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_6_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_6_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_6_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_6_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">7</div>
+                <div id="grid_7_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_7_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_7_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_7_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_7_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">8</div>
+                <div id="grid_8_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_8_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_8_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_8_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_8_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            <div class="hole_item">
+                <div class="hole_label">9</div>
+                <div id="grid_9_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_9_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_9_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_9_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                <div id="grid_9_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+            </div>
+            
+            <div id="eighteen_holes">
+                <div class="hole_item">
+                    <div class="hole_label">10</div>
+                    <div id="grid_10_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_10_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_10_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_10_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_10_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">11</div>
+                    <div id="grid_11_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_11_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_11_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_11_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_11_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">12</div>
+                    <div id="grid_12_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_12_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_12_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_12_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_12_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">13</div>
+                    <div id="grid_13_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_13_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_13_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_13_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_13_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">14</div>
+                    <div id="grid_14_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_14_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_14_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_14_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_14_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">15</div>
+                    <div id="grid_15_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_15_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_15_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_15_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_15_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">16</div>
+                    <div id="grid_16_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_16_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_16_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_16_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_16_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">17</div>
+                    <div id="grid_17_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_17_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_17_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_17_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_17_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+                <div class="hole_item">
+                    <div class="hole_label">18</div>
+                    <div id="grid_18_5" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_18_4" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_18_3" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_18_2" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                    <div id="grid_18_1" class="hole_stroke" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,addStroke)">&nbsp;</div>
+                </div>
+            </div>
+            
+            <div class="hole_item">
+                <div class="hole_label">total</div>
+                <div id="total_5" class="hole_stroke">&nbsp;</div>
+                <div id="total_4" class="hole_stroke">&nbsp;</div>
+                <div id="total_3" class="hole_stroke">&nbsp;</div>
+                <div id="total_2" class="hole_stroke">&nbsp;</div>
+                <div id="total_1" class="hole_stroke">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="stroke_entry">
+        <div id="stroke_entry_title"></div>
+        <div class="stroke_entry_number_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,useStroke)">1</div>
+        <div class="stroke_entry_number_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,useStroke)">2</div>
+        <div class="stroke_entry_number_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,useStroke)">3</div>
+        <div class="stroke_entry_number_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,useStroke)">4</div>
+        <div class="stroke_entry_number_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,useStroke)">5</div>
+        <div class="stroke_entry_number_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,useStroke)">6</div>
+        <div class="stroke_entry_cancel_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,cancelAddStroke)">cancel</div>
+    </div>
+    
+    <div id="areyousure_menu">
+        <div class="top_spacer"></div>
+        <div class="areyousure_title">this will clear your score card. are you sure?</div>
+        <div class="areyousure_menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,clearAndBackToMenu)">yes</div>
+        <div class="areyousure_menu_button" ontouchstart="pressButtonNow(this)" ontouchend="tap(this,backToScoreCard)">no</div>
+    </div>
+
+</div>

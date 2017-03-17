@@ -1,0 +1,94 @@
+
+body {
+    color: #ddd;
+    background-color: #222;
+}
+
+.mini_title {
+    border-bottom: 1px solid #aaa;
+}
+
+/* ---------- main_menu ---------- */
+
+.splash_title {
+    color: #b33;
+}
+
+#main_menu .fancy_button_holder {
+    color: #aaa;
+}
+
+#main_menu {
+    background-color: #222;
+}
+
+.company {
+    color: #b33;
+}
+
+@-webkit-keyframes splash_title_frames {
+    0% {
+        padding-top: 44vh;
+        padding-bottom: 55vh;
+        color: white;
+        background-color: #fff;
+    } 5% {
+        background-color: #d40d12;
+    } 30% {
+        background-color: #d40d12;
+    } 70% {
+        padding-top: 44vh;
+        padding-bottom: 55vh;
+        color: white;
+        background-color: #222;
+    } 100% {
+        padding-top: 5vh;
+        padding-bottom: 0vh;
+        color: #b33;
+    }
+}
+
+/* ---------- main_stats ---------- */
+
+.create_content.danger {
+    color: #b33;
+}
+
+.tab_item.selected_tab {
+    color: #45bf55;
+}
+
+.mine {
+    color: #45bf55;
+}
+
+/* ---------- main_game_one ---------- */
+
+.timer {
+    color: #222;
+    background-color: #aaa;
+}
+
+.timer.danger {
+    background-color: #b33;
+}
+
+.grid_item {
+    color: #000;
+    background-color: #888;
+    border: 2px solid #888;
+}
+
+.grid_item.hover_over {
+    background-color: #999;
+}
+
+/* ---------- other ---------- */
+
+.square_button {
+    background-color: #555;
+}
+
+.square_button.button_down {
+    background-color: #444;
+}

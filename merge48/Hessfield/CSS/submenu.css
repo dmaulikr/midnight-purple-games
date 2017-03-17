@@ -1,0 +1,173 @@
+
+.info_box {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    color: #bbb;
+    background-color: #444;
+    box-shadow: 0px 0px 25px #222;
+    font-size: 2em;
+}
+
+.info_box .info_text {
+    padding: 50px 40px;
+}
+
+.info_box .ok_button {
+    text-align: center;
+    padding: 25px 0px;
+    border-top: 1px solid black;
+}
+
+.info_box .button_down {
+    background-color: #555;
+}
+
+.product_button {
+    border-top: 1px solid black;
+    padding: 10px 0px;
+}
+
+.product_button .package_size {
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+.product_button .price {
+    font-style: italic;
+    font-size: 0.8em;
+    margin-left: 15px;
+    color: #888;
+}
+
+#bottom_menu {
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    width: 90%;
+    height: 380px;
+    font-size: 2em;
+    color: #bbb;
+    background-color: #444;
+    box-shadow: 0px 0px 5px #000;
+    -webkit-transition: all 120ms ease-in;
+}
+
+#bottom_menu.closed {
+    bottom: -400px;
+}
+
+#bottom_menu .item.bordered {
+    border-bottom: 2px solid #333;
+}
+
+#bottom_menu .item {
+    width: 80%;
+    margin-left: 10%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+
+#bottom_menu .item.button_down {
+    color: #999;
+}
+
+/* ----- portrait - iPad Mini ----- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1000px) {
+    #bottom_menu, .info_box {
+        font-size: 1.7em;
+    }
+    
+    .info_box {
+        top: 25%;
+        left: 20%;
+        width: 60%;
+    }
+}
+
+/* ----- portrait - iPhone 6 ----- */
+@media only screen and (min-device-width : 375px) and (min-device-height: 559px) and (max-device-width: 767px) {
+    .info_box {
+        left: 10%;
+        width: 80%;
+        box-shadow: 0px 0px 15px #222;
+        font-size: 1.5em;
+    }
+    
+    .info_box .info_text {
+        padding: 30px 20px;
+    }
+    
+    #bottom_menu {
+        height: 215px;
+        font-size: 1.5em;
+    }
+    
+    #bottom_menu.closed {
+        bottom: -225px;
+    }
+    
+    #bottom_menu .item {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+/* ----- portrait - iPhone 6 Plus----- */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (max-device-width: 767px) {
+    .info_box {
+        left: 10%;
+        width: 80%;
+        box-shadow: 0px 0px 15px #222;
+        font-size: 1.5em;
+    }
+    
+    .info_box .info_text {
+        padding: 30px 20px;
+    }
+    
+    #bottom_menu {
+        height: 215px;
+        font-size: 1.5em;
+    }
+    
+    #bottom_menu.closed {
+        bottom: -225px;
+    }
+    
+    #bottom_menu .item {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+/* ----- portrait - iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) {
+    .info_box {
+        left: 10%;
+        width: 80%;
+        box-shadow: 0px 0px 15px #222;
+        font-size: 1.2em;
+    }
+    
+    .info_box .info_text {
+        padding: 10px 10px;
+    }
+    
+    #bottom_menu {
+        height: 230px;
+        font-size: 1.5em;
+    }
+    
+    #bottom_menu.closed {
+        bottom: -240px;
+    }
+    
+    #bottom_menu .item {
+        height: 70px;
+        line-height: 70px;
+    }
+}

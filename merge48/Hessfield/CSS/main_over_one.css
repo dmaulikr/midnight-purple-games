@@ -1,0 +1,94 @@
+
+#main_overone .title {
+    font-style: italic;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+#ending_score {
+    width: 100%;
+    margin-top: 150px;
+    font-size: 5em;
+    text-align: center;
+}
+
+#coin_gains {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-size: 3.4em;
+    text-align: center;
+}
+
+/* ----- portrait - iPad Mini ----- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1000px) {
+    #main_overone .title {
+        margin-top: 50px;
+    }
+    
+    #ending_score {
+        margin-top: 100px;
+    }
+    
+    #coin_gains {
+        margin-bottom: 150px;
+    }
+}
+
+/* ----- portrait - iPhone 6 ----- */
+@media only screen and (min-device-width : 375px) and (min-device-height: 559px) and (max-device-width: 767px) {
+    #main_overone .title {
+        margin-top: 30px;
+        font-size: 2.5em;
+    }
+    
+    #ending_score {
+        margin-top: 60px;
+        font-size: 4em;
+    }
+    
+    #coin_gains {
+        margin-top: 25px;
+        margin-bottom: 70px;
+        font-size: 2.4em;
+    }
+}
+
+/* ----- portrait - iPhone 6 Plus----- */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (max-device-width: 767px) {
+    #main_overone .title {
+        margin-top: 50px;
+        font-size: 2.5em;
+    }
+    
+    #ending_score {
+        margin-top: 70px;
+        font-size: 4em;
+    }
+    
+    #coin_gains {
+        margin-top: 30px;
+        margin-bottom: 90px;
+        font-size: 2.4em;
+    }
+}
+
+/* ----- portrait - iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) {
+    #main_overone .title {
+        margin-top: 25px;
+        font-size: 2em;
+    }
+    
+    #ending_score {
+        margin-top: 30px;
+        font-size: 3em;
+    }
+    
+    #coin_gains {
+        margin-top: 20px;
+        margin-bottom: 55px;
+        font-size: 2em;
+    }
+}

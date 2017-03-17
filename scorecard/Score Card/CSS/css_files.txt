@@ -1,0 +1,7 @@
+style
+menu
+name_entry
+archive
+scorecard
+areyousure_menu
+stroke_entry

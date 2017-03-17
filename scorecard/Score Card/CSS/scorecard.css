@@ -1,0 +1,200 @@
+
+#nine_holes {
+    display: none;
+}
+
+.names_holder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.name_item {
+    float: right;
+    display: inline-block;
+}
+
+.sideways_name {
+    -webkit-transform: rotate(-90deg);
+}
+
+.holes_holder {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hole_item {
+    width: 100%;
+}
+
+.hole_label {
+    float: left;
+    display: inline-block;
+}
+
+.hole_stroke {
+    float: right;
+    display: inline-block;
+    width: 16%;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mini_menu_button {
+    float: left;
+    display: inline-block;
+    background-color: rgba(180, 180, 180, 0.5);
+    box-shadow: 0px 0px 5px #444;
+}
+
+.hole_stroke.button_down {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mini_menu_button.button_down {
+    box-shadow: 0px 0px 10px #222;
+}
+
+/* ----- portrait - iPad ----- */
+@media only screen and (orientation: portrait) {
+    .names_holder {
+        height: 200px;
+        font-size: 2.3em;
+    }
+    
+    .name_item {
+        height: 200px;
+        line-height: 250px;
+        width: calc(16% + 2px);
+    }
+    
+    .holes_holder {
+        top: 200px;
+        height: calc(100% - 202px);
+        padding-top: 2px;
+    }
+    
+    .hole_item {
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 2px;
+    }
+    
+    .hole_label {
+        width: calc(20% - 10px);
+        font-size: 1.9em;
+    }
+    
+    .hole_stroke {
+        font-size: 1.9em;
+        border-radius: 5px;
+        margin-right: 2px;
+    }
+    
+    .mini_menu_button {
+        margin-top: 25px;
+        margin-left: 5px;
+        height: 50px;
+        line-height: 40px;
+        width: calc(20% - 50px);
+        border-radius: 7px;
+    }
+}
+
+/* ----- portrait - iPhone 6, iPhone 6 Plus ----- */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .names_holder {
+        height: 135px;
+        font-size: 1.5em;
+    }
+    
+    .name_item {
+        height: 135px;
+        line-height: 185px;
+        width: calc(16% + 2px);
+    }
+    
+    .holes_holder {
+        top: 135px;
+        height: calc(100% - 137px);
+        padding-top: 2px;
+    }
+    
+    .hole_item {
+        height: 58px;
+        line-height: 58px;
+        margin-bottom: 2px;
+    }
+    
+    .hole_label {
+        width: calc(20% - 10px);
+        font-size: 1.3em;
+    }
+    
+    .hole_stroke {
+        font-size: 1.3em;
+        border-radius: 3px;
+        margin-right: 2px;
+    }
+    
+    .mini_menu_button {
+        margin-top: 24px;
+        margin-left: 5px;
+        height: 38px;
+        line-height: 35px;
+        width: calc(20% - 20px);
+        border-radius: 5px;
+    }
+}
+
+/* ----- portrait - iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+    .names_holder {
+        height: 115px;
+        font-size: 1.2em;
+    }
+    
+    .name_item {
+        height: 115px;
+        line-height: 155px;
+        width: calc(16% + 1px);
+    }
+    
+    .holes_holder {
+        top: 115px;
+        height: calc(100% - 116px);
+        padding-top: 1px;
+    }
+    
+    .hole_item {
+        height: 44px;
+        line-height: 44px;
+        margin-bottom: 1px;
+    }
+    
+    .hole_label {
+        width: calc(20% - 5px);
+        font-size: 1.2em;
+    }
+    
+    .hole_stroke {
+        font-size: 1.2em;
+        border-radius: 3px;
+        margin-right: 1px;
+    }
+    
+    .mini_menu_button {
+        margin-top: 24px;
+        margin-left: 5px;
+        height: 38px;
+        line-height: 35px;
+        width: calc(20% - 15px);
+        border-radius: 5px;
+    }
+}

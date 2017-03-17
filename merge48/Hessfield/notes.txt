@@ -1,0 +1,12 @@
+
+BONUS
+Type (String)
+Date (01-01-1900)
+Time (MS since 1970)
+
+TWO PLAYER
+player_one      (guid)
+player_two      (guid)
+board           (string)            "0_0_8_16_" etc.
+turn            (int)               1 or 2
+last_turn       (MS since 1970)

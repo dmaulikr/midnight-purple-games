@@ -1,0 +1,18 @@
+
+
+
+TODO
+- share this app (email or text)
+- force touch to scan
+- save history and charge for it :)
+- mini menu always visible
+- support email
+
+
+PROBLEMS
+- handling special chars
+
+
+FUTURE
+- cool animations
+- auto detect types

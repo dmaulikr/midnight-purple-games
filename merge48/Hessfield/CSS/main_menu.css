@@ -1,0 +1,104 @@
+
+.splash_title {
+    width: 100%;
+    font-size: 4em;
+    padding-top: 5vh;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: "AvenirNext-Heavy";
+}
+
+.splash_title_animation {
+    -webkit-animation-name: splash_title_frames;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.company_animation {
+    -webkit-animation-name: company_frames;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#main_menu .fancy_button_holder {
+    margin-top: 195px;
+}
+
+#main_menu {
+    width: 100%;
+    height: 100%;
+}
+
+.company {
+    font-variant: small-caps;
+    position: absolute;
+    font-family: "AvenirNext-Heavy";
+    left: 0px;
+    bottom: 45px;
+    width: 100%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+@-webkit-keyframes company_frames {
+    0% {
+        opacity: 0;
+    } 85% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+/* ----- portrait - iPad Mini ----- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1000px) {
+    #main_menu .fancy_button_holder {
+        margin-top: 100px;
+    }
+}
+
+/* ----- portrait - iPhone 6 ----- */
+@media only screen and (min-device-width : 375px) and (min-device-height: 559px) and (max-device-width: 767px) {
+    .splash_title {
+        font-size: 3em;
+    }
+    
+    #main_menu .fancy_button_holder {
+        margin-top: 75px;
+    }
+    
+    .company {
+        font-size: 1.5em;
+    }
+}
+
+/* ----- portrait - iPhone 6 Plus----- */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (max-device-width: 767px) {
+    .splash_title {
+        font-size: 3em;
+    }
+    
+    #main_menu .fancy_button_holder {
+        margin-top: 90px;
+    }
+    
+    .company {
+        font-size: 2em;
+    }
+}
+
+/* ----- portrait - iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) {
+    .splash_title {
+        font-size: 2.5em;
+    }
+    
+    #main_menu .fancy_button_holder {
+        margin-top: 50px;
+    }
+    
+    .company {
+        bottom: 25px;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,103 @@
+
+.grid_item:before {
+    content: "\00a0";
+}
+
+.grid_item[bgcolor="2"]:before {
+    content: "2";
+}
+
+.grid_item[bgcolor="4"]:before {
+    content: "4";
+}
+
+.grid_item[bgcolor="8"]:before {
+    content: "8";
+}
+
+.grid_item[bgcolor="16"]:before {
+    content: "16";
+}
+
+.grid_item[bgcolor="32"]:before {
+    content: "32";
+}
+
+.grid_item[bgcolor="64"]:before {
+    content: "64";
+}
+
+.grid_item[bgcolor="128"]:before {
+    content: "128";
+}
+
+.grid_item[bgcolor="256"]:before {
+    content: "256";
+}
+
+.grid_item[bgcolor="512"]:before {
+    content: "512";
+}
+
+.grid_item[bgcolor="1024"]:before {
+    content: "1024";
+}
+
+.grid_item[bgcolor="2048"]:before {
+    content: "2048";
+}
+
+.grid_item[bgcolor="2"] {
+    background-color: #ffde20;
+    border: 2px solid #ffde20;
+}
+
+.grid_item[bgcolor="4"] {
+    background-color: #ffbe00;
+    border: 2px solid #ffbe00;
+}
+
+.grid_item[bgcolor="8"] {
+    background-color: #ff822e;
+    border: 2px solid #ff822e;
+}
+
+.grid_item[bgcolor="16"] {
+    background-color: #fa5b0f;
+    border: 2px solid #fa5b0f;
+}
+
+.grid_item[bgcolor="32"] {
+    background-color: #d40d12;
+    border: 2px solid #d40d12;
+}
+
+.grid_item[bgcolor="64"] {
+    background-color: #45bf55;
+    border: 2px solid #45bf55;
+}
+
+.grid_item[bgcolor="128"] {
+    background-color: #167f39;
+    border: 2px solid #167f39;
+}
+
+.grid_item[bgcolor="256"] {
+    background-color: #044c29;
+    border: 2px solid #044c29;
+}
+
+.grid_item[bgcolor="512"] {
+    background-color: #4e7ac7;
+    border: 2px solid #4e7ac7;
+}
+
+.grid_item[bgcolor="1024"] {
+    background-color: #35478c;
+    border: 2px solid #35478c;
+}
+
+.grid_item[bgcolor="2048"] {
+    background-color: #25064c;
+    border: 2px solid #25064c;
+}

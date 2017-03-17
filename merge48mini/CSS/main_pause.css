@@ -1,0 +1,13 @@
+
+#main_pause {
+    text-align: center;
+}
+
+.resume_button {
+    margin-top: 50px;
+    background-color: #4d7;
+}
+
+.resume_button.button_down {
+    opacity: 0.8;
+}

@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C165C791C8081E700C60A53 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C165C781C8081E700C60A53 /* notes.txt */; };
+		3C165C7D1C80838B00C60A53 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C165C7B1C80838B00C60A53 /* Fabric.framework */; };
+		3C165C7E1C80838B00C60A53 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C165C7C1C80838B00C60A53 /* Crashlytics.framework */; };
+		3C67D90F1C6224F700905AB1 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D90E1C6224F700905AB1 /* Bird.swift */; };
+		3C67D9111C62255B00905AB1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D9101C62255B00905AB1 /* Utils.swift */; };
+		3C67D93F1C6226A100905AB1 /* css_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D9151C6226A100905AB1 /* css_files.txt */; };
+		3C67D9441C6226A100905AB1 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D91A1C6226A100905AB1 /* style.css */; };
+		3C67D9451C6226A100905AB1 /* util.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D91B1C6226A100905AB1 /* util.css */; };
+		3C67D9471C6226A100905AB1 /* font_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D91E1C6226A100905AB1 /* font_files.txt */; };
+		3C67D9511C6226A100905AB1 /* user_profile.html in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D92A1C6226A100905AB1 /* user_profile.html */; };
+		3C67D9521C6226A100905AB1 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D92B1C6226A100905AB1 /* index.html */; };
+		3C67D95A1C6226A100905AB1 /* image_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D9341C6226A100905AB1 /* image_files.txt */; };
+		3C67D95E1C6226A100905AB1 /* js_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D9391C6226A100905AB1 /* js_files.txt */; };
+		3C67D9601C6226A100905AB1 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D93B1C6226A100905AB1 /* main.js */; };
+		3C67D9611C6226A100905AB1 /* util.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D93C1C6226A100905AB1 /* util.js */; };
+		3C76C5C11C60CE7D00EE8F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C76C5C01C60CE7D00EE8F3B /* AppDelegate.swift */; };
+		3C76C5C31C60CE7D00EE8F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C76C5C21C60CE7D00EE8F3B /* ViewController.swift */; };
+		3C76C5C61C60CE7D00EE8F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C76C5C41C60CE7D00EE8F3B /* Main.storyboard */; };
+		3C76C5C81C60CE7D00EE8F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C76C5C71C60CE7D00EE8F3B /* Assets.xcassets */; };
+		3C76C5CB1C60CE7D00EE8F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C76C5C91C60CE7D00EE8F3B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C165C781C8081E700C60A53 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
+		3C165C7B1C80838B00C60A53 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		3C165C7C1C80838B00C60A53 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		3C67D90E1C6224F700905AB1 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		3C67D9101C62255B00905AB1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3C67D9151C6226A100905AB1 /* css_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css_files.txt; sourceTree = "<group>"; };
+		3C67D91A1C6226A100905AB1 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		3C67D91B1C6226A100905AB1 /* util.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = util.css; sourceTree = "<group>"; };
+		3C67D91E1C6226A100905AB1 /* font_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font_files.txt; sourceTree = "<group>"; };
+		3C67D92A1C6226A100905AB1 /* user_profile.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = user_profile.html; sourceTree = "<group>"; };
+		3C67D92B1C6226A100905AB1 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3C67D9341C6226A100905AB1 /* image_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = image_files.txt; sourceTree = "<group>"; };
+		3C67D9391C6226A100905AB1 /* js_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = js_files.txt; sourceTree = "<group>"; };
+		3C67D93B1C6226A100905AB1 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		3C67D93C1C6226A100905AB1 /* util.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = util.js; sourceTree = "<group>"; };
+		3C76C5BD1C60CE7D00EE8F3B /* Optic Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Optic Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C76C5C01C60CE7D00EE8F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C76C5C21C60CE7D00EE8F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C76C5C51C60CE7D00EE8F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C76C5C71C60CE7D00EE8F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C76C5CA1C60CE7D00EE8F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C76C5CC1C60CE7D00EE8F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C76C5BA1C60CE7D00EE8F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C165C7E1C80838B00C60A53 /* Crashlytics.framework in Frameworks */,
+				3C165C7D1C80838B00C60A53 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C67D9121C6226A100905AB1 /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D9151C6226A100905AB1 /* css_files.txt */,
+				3C67D91A1C6226A100905AB1 /* style.css */,
+				3C67D91B1C6226A100905AB1 /* util.css */,
+			);
+			path = CSS;
+			sourceTree = "<group>";
+		};
+		3C67D91C1C6226A100905AB1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D91E1C6226A100905AB1 /* font_files.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3C67D9201C6226A100905AB1 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D9211C6226A100905AB1 /* controls */,
+				3C67D92B1C6226A100905AB1 /* index.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		3C67D9211C6226A100905AB1 /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D92A1C6226A100905AB1 /* user_profile.html */,
+			);
+			path = controls;
+			sourceTree = "<group>";
+		};
+		3C67D92C1C6226A100905AB1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D9341C6226A100905AB1 /* image_files.txt */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3C67D9361C6226A100905AB1 /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D9391C6226A100905AB1 /* js_files.txt */,
+				3C67D93B1C6226A100905AB1 /* main.js */,
+				3C67D93C1C6226A100905AB1 /* util.js */,
+			);
+			path = JavaScript;
+			sourceTree = "<group>";
+		};
+		3C76C5B41C60CE7D00EE8F3B = {
+			isa = PBXGroup;
+			children = (
+				3C76C5BF1C60CE7D00EE8F3B /* Optic Blue */,
+				3C76C5BE1C60CE7D00EE8F3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C76C5BE1C60CE7D00EE8F3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C76C5BD1C60CE7D00EE8F3B /* Optic Blue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C76C5BF1C60CE7D00EE8F3B /* Optic Blue */ = {
+			isa = PBXGroup;
+			children = (
+				3C76C5C01C60CE7D00EE8F3B /* AppDelegate.swift */,
+				3C76C5C21C60CE7D00EE8F3B /* ViewController.swift */,
+				3C67D90E1C6224F700905AB1 /* Bird.swift */,
+				3C67D9101C62255B00905AB1 /* Utils.swift */,
+				3C165C781C8081E700C60A53 /* notes.txt */,
+				3C67D9201C6226A100905AB1 /* HTML */,
+				3C67D9121C6226A100905AB1 /* CSS */,
+				3C67D9361C6226A100905AB1 /* JavaScript */,
+				3C67D92C1C6226A100905AB1 /* Images */,
+				3C67D91C1C6226A100905AB1 /* Fonts */,
+				3C76C5C71C60CE7D00EE8F3B /* Assets.xcassets */,
+				3C76C5C41C60CE7D00EE8F3B /* Main.storyboard */,
+				3C76C5C91C60CE7D00EE8F3B /* LaunchScreen.storyboard */,
+				3C165C7B1C80838B00C60A53 /* Fabric.framework */,
+				3C165C7C1C80838B00C60A53 /* Crashlytics.framework */,
+				3C76C5CC1C60CE7D00EE8F3B /* Info.plist */,
+			);
+			path = "Optic Blue";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C76C5BC1C60CE7D00EE8F3B /* Optic Blue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C76C5CF1C60CE7D00EE8F3B /* Build configuration list for PBXNativeTarget "Optic Blue" */;
+			buildPhases = (
+				3C76C5B91C60CE7D00EE8F3B /* Sources */,
+				3C76C5BA1C60CE7D00EE8F3B /* Frameworks */,
+				3C76C5BB1C60CE7D00EE8F3B /* Resources */,
+				3C165C7A1C80837500C60A53 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Optic Blue";
+			productName = "Optic Blue";
+			productReference = 3C76C5BD1C60CE7D00EE8F3B /* Optic Blue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C76C5B51C60CE7D00EE8F3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Midnight Purple Games";
+				TargetAttributes = {
+					3C76C5BC1C60CE7D00EE8F3B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2AQ59S82NU;
+					};
+				};
+			};
+			buildConfigurationList = 3C76C5B81C60CE7D00EE8F3B /* Build configuration list for PBXProject "Optic Blue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C76C5B41C60CE7D00EE8F3B;
+			productRefGroup = 3C76C5BE1C60CE7D00EE8F3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C76C5BC1C60CE7D00EE8F3B /* Optic Blue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C76C5BB1C60CE7D00EE8F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C67D9611C6226A100905AB1 /* util.js in Resources */,
+				3C76C5CB1C60CE7D00EE8F3B /* LaunchScreen.storyboard in Resources */,
+				3C67D95A1C6226A100905AB1 /* image_files.txt in Resources */,
+				3C67D9471C6226A100905AB1 /* font_files.txt in Resources */,
+				3C67D9451C6226A100905AB1 /* util.css in Resources */,
+				3C67D9521C6226A100905AB1 /* index.html in Resources */,
+				3C76C5C81C60CE7D00EE8F3B /* Assets.xcassets in Resources */,
+				3C67D9441C6226A100905AB1 /* style.css in Resources */,
+				3C165C791C8081E700C60A53 /* notes.txt in Resources */,
+				3C67D93F1C6226A100905AB1 /* css_files.txt in Resources */,
+				3C76C5C61C60CE7D00EE8F3B /* Main.storyboard in Resources */,
+				3C67D9511C6226A100905AB1 /* user_profile.html in Resources */,
+				3C67D9601C6226A100905AB1 /* main.js in Resources */,
+				3C67D95E1C6226A100905AB1 /* js_files.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C165C7A1C80837500C60A53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run d58e5473d8255b20becdbf3cf109674acc9a7c05 84d597719862b9b66c172c617d975ec25dcd5e172c5a6aa03d64db092e32b5fe";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C76C5B91C60CE7D00EE8F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C76C5C31C60CE7D00EE8F3B /* ViewController.swift in Sources */,
+				3C67D90F1C6224F700905AB1 /* Bird.swift in Sources */,
+				3C76C5C11C60CE7D00EE8F3B /* AppDelegate.swift in Sources */,
+				3C67D9111C62255B00905AB1 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C76C5C41C60CE7D00EE8F3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C76C5C51C60CE7D00EE8F3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C76C5C91C60CE7D00EE8F3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C76C5CA1C60CE7D00EE8F3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C76C5CD1C60CE7D00EE8F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C76C5CE1C60CE7D00EE8F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C76C5D01C60CE7D00EE8F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Optic Blue/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.midnightpurplegames.opticblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C76C5D11C60CE7D00EE8F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Optic Blue/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.midnightpurplegames.opticblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C76C5B81C60CE7D00EE8F3B /* Build configuration list for PBXProject "Optic Blue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C76C5CD1C60CE7D00EE8F3B /* Debug */,
+				3C76C5CE1C60CE7D00EE8F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C76C5CF1C60CE7D00EE8F3B /* Build configuration list for PBXNativeTarget "Optic Blue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C76C5D01C60CE7D00EE8F3B /* Debug */,
+				3C76C5D11C60CE7D00EE8F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C76C5B51C60CE7D00EE8F3B /* Project object */;
+}

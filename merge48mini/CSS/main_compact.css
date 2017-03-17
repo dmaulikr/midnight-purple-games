@@ -1,0 +1,67 @@
+
+#main_compact {
+    text-align: center;
+}
+
+.game_title {
+    padding-top: 70px;
+    font-size: 2.5em;
+    font-family: "AvenirNext-Heavy";
+}
+
+.start_button {
+    margin-top: 50px;
+    background-color: #4d7;
+}
+
+.start_button.button_down {
+    opacity: 0.8;
+}
+
+/* ----- portrait - iPad Mini ----- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1000px) {
+    .game_title {
+        padding-top: 50px;
+        font-size: 2.2em;
+    }
+    
+    .start_button {
+        margin-top: 40px;
+    }
+}
+
+/* ----- portrait - iPhone 6 ----- */
+@media only screen and (min-device-width : 375px) and (min-device-height: 559px) and (max-device-width: 767px) {
+    .game_title {
+        padding-top: 33px;
+        font-size: 2em;
+    }
+    
+    .start_button {
+        margin-top: 28px;
+    }
+}
+
+/* ----- portrait - iPhone 6 Plus----- */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (max-device-width: 767px) {
+    .game_title {
+        padding-top: 37px;
+        font-size: 2.1em;
+    }
+    
+    .start_button {
+        margin-top: 35px;
+    }
+}
+
+/* ----- portrait - iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) {
+    .game_title {
+        padding-top: 30px;
+        font-size: 1.8em;
+    }
+    
+    .start_button {
+        margin-top: 25px;
+    }
+}

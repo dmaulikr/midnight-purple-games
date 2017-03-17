@@ -1,0 +1,11 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "Avenir-Book";
+}

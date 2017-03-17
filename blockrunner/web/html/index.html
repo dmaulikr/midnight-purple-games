@@ -1,0 +1,52 @@
+
+<div id="everything_holder">
+    <div id="main_menu">
+        <div class="mini_title centered">BLOCK RUNNER</div>
+        <div class="mini_subtitle centered">HIGH SCORE: <span id="high_score">0</span></div>
+        <div class="mini_button bottom_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[startGame])">PLAY</div>
+    </div>
+    
+    <div id="main_game" class="large_menu">
+        <div id="score"></div>
+        <div id="block_runner"></div>
+        <div id="falling_block_0" class="falling_block"></div>
+        <div id="falling_block_1" class="falling_block"></div>
+        <div id="falling_block_2" class="falling_block"></div>
+        <div id="falling_block_3" class="falling_block"></div>
+        <div id="falling_block_4" class="falling_block"></div>
+        <div id="falling_block_5" class="falling_block"></div>
+        <div id="falling_block_6" class="falling_block"></div>
+        <div id="falling_block_7" class="falling_block"></div>
+        <div id="falling_block_8" class="falling_block"></div>
+        <div id="falling_block_9" class="falling_block"></div>
+        <div id="falling_block_10" class="falling_block"></div>
+        <div id="falling_block_11" class="falling_block"></div>
+        <div id="falling_block_12" class="falling_block"></div>
+        <div id="falling_block_13" class="falling_block"></div>
+        <div id="falling_block_14" class="falling_block"></div>
+        <div id="falling_block_15" class="falling_block"></div>
+        <div id="falling_block_16" class="falling_block"></div>
+        <div id="falling_block_17" class="falling_block"></div>
+        <div id="falling_block_18" class="falling_block"></div>
+        <div id="falling_block_19" class="falling_block"></div>
+        <div id="falling_block_20" class="falling_block"></div>
+        <div id="falling_block_21" class="falling_block"></div>
+        <div id="falling_block_22" class="falling_block"></div>
+        <div id="falling_block_23" class="falling_block"></div>
+        <div id="falling_block_24" class="falling_block"></div>
+        <div id="steering_zone" ontouchstart="startMoving()" ontouchmove="steerBlock(event)">
+            <div class="instructions">
+                tap to start
+                <br/>
+                slide to steer
+            </div>
+        </div>
+    </div>
+    
+    <div id="main_over" class="large_menu">
+        <div id="final_score"></div>
+        <div class="mini_subtitle centered">HIGH SCORE: <span id="final_high_score">0</span></div>
+        <div class="mini_button second_bottom_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[sendText])">SEND CHALLENGE</div>
+        <div class="mini_button bottom_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[startGame])">PLAY AGAIN</div>
+    </div>
+</div>

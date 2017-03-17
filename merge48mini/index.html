@@ -1,0 +1,54 @@
+
+<div id="everything_holder">
+    <div id="main_compact" class="large_menu">
+        <div class="game_title">Merge 48</div>
+        <div class="mini_button start_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[startNewGame])">start a new game</div>
+    </div>
+    
+    <div id="main_game" class="large_menu">
+        <div id="top_info_holder">
+            <div class="score_title_holder">
+                <div class="them_score_title">Them</div>
+                <div class="you_score_title">You</div>
+            </div>
+            <div class="score_holder">
+                <div id="them_score">0</div>
+                <div id="score">0</div>
+            </div>
+        </div>
+        <div id="top_info_spacer" style="display:none;">
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+        </div>
+        <div class="grid_holder">
+            <div id="grid_1_1" class="grid_item" row="1" col="1"></div><div id="grid_1_2" class="grid_item" row="1" col="2"></div><div id="grid_1_3" class="grid_item" row="1" col="3"></div><div id="grid_1_4" class="grid_item" row="1" col="4"></div>
+            
+            <div id="grid_2_1" class="grid_item" row="2" col="1"></div><div id="grid_2_2" class="grid_item" row="2" col="2"></div><div id="grid_2_3" class="grid_item" row="2" col="3"></div><div id="grid_2_4" class="grid_item" row="2" col="4"></div>
+            
+            <div id="grid_3_1" class="grid_item" row="3" col="1"></div><div id="grid_3_2" class="grid_item" row="3" col="2"></div><div id="grid_3_3" class="grid_item" row="3" col="3"></div><div id="grid_3_4" class="grid_item" row="3" col="4"></div>
+            
+            <div id="grid_4_1" class="grid_item" row="4" col="1"></div><div id="grid_4_2" class="grid_item" row="4" col="2"></div><div id="grid_4_3" class="grid_item" row="4" col="3"></div><div id="grid_4_4" class="grid_item" row="4" col="4"></div>
+        </div>
+        <div id="future_piece_holder">
+            <div id="future_piece" class="grid_item"></div>
+        </div>
+        <div id="next_piece_holder">
+            <div id="next_piece" class="grid_item" ontouchstart="pickUpNextPiece(event)" ontouchmove="dragNextPiece(event)" ontouchend="dropNextPiece(event)"></div>
+        </div>
+        <div id="help_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[showHelp])">?</div>
+    </div>
+    
+    <div id="main_pause" class="large_menu">
+        <div class="mini_button resume_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[resumeFromPause])">resume</div>
+    </div>
+    
+    <div id="main_help" class="large_menu">
+        <div class="back_button" ontouchstart="pressButton(this)" ontouchend="tap(this,[backFromHelp])">&lt;&nbsp;back</div>
+        <div class="mini_header">how to play</div>
+        <div class="mini_content">drag the block from the bottom center onto the grid. the goal is to place it beside another brick of the same number. the smaller block on the bottom left is a next block hint. once you use the two blocks, it will be the opponents turn.</div>
+        <div class="mini_header">winning</div>
+        <div class="mini_content">points are earned when you make matches. the larger the number matched, the more points that you get. the game is over when the grid is full, and there are no more possible moves. the player with the most points wins.</div>
+        <div class="mini_header">more info</div>
+        <div class="mini_content">search the app store for merge 48 for more ways to play, high score lists, and lots more fun.</div>
+    </div>
+</div>

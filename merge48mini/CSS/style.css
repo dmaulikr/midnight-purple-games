@@ -1,0 +1,16 @@
+
+html, body {
+    font-family: "Avenir-Book";
+    color: #eee;
+    background-color: #444;
+}
+
+.mini_button {
+    display: inline-block;
+    padding: 13px 24px;
+    font-size: 1.8em;
+    font-variant: small-caps;
+    text-align: center;
+    color: #444;
+    border-radius: 6px;
+}

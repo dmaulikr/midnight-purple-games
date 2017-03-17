@@ -1,0 +1,8 @@
+tiny_button.mp3
+note_1.mp3
+note_2.mp3
+note_3.mp3
+note_4.mp3
+game_over.mp3
+error_drop.mp3
+hit.mp3

@@ -1,0 +1,105 @@
+
+#stroke_entry {
+    display: none;
+}
+
+#stroke_entry_title {
+    width: 100%;
+}
+
+.stroke_entry_number_button {
+    display: inline-block;
+    background-color: rgba(180, 180, 180, 0.5);
+    box-shadow: 0px 0px 5px #444;
+}
+
+.stroke_entry_cancel_button {
+    display: inline-block;
+    background-color: rgba(180, 180, 180, 0.5);
+    box-shadow: 0px 0px 5px #444;
+}
+
+.stroke_entry_number_button.button_down, .stroke_entry_cancel_button.button_down {
+    box-shadow: 0px 0px 10px #222;
+}
+
+/* ----- portrait - iPad ----- */
+@media only screen and (orientation: portrait) {
+    #stroke_entry_title {
+        height: 240px;
+        line-height: 240px;
+        font-size: 3.5em;
+    }
+    
+    .stroke_entry_number_button {
+        width: 170px;
+        height: 170px;
+        line-height: 170px;
+        margin: 0px 25px 45px 25px;
+        border-radius: 15px;
+        font-size: 3em;
+    }
+    
+    .stroke_entry_cancel_button {
+        width: 80%;
+        height: 140px;
+        line-height: 140px;
+        margin-top: 60px;
+        border-radius: 15px;
+        font-size: 3.2em;
+    }
+}
+
+/* ----- portrait - iPhone 6, iPhone 6 Plus ----- */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    #stroke_entry_title {
+        height: 200px;
+        line-height: 200px;
+        font-size: 2.2em;
+    }
+    
+    .stroke_entry_number_button {
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+        margin: 0px 10px 30px 10px;
+        border-radius: 14px;
+        font-size: 2em;
+    }
+    
+    .stroke_entry_cancel_button {
+        width: 70%;
+        height: 90px;
+        line-height: 90px;
+        margin-top: 45px;
+        border-radius: 10px;
+        font-size: 2.2em;
+    }
+}
+
+/* ----- portrait - iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s ----- */
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+    #stroke_entry_title {
+        height: 150px;
+        line-height: 150px;
+        font-size: 2em;
+    }
+    
+    .stroke_entry_number_button {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        margin: 0px 10px 20px 10px;
+        border-radius: 12px;
+        font-size: 2em;
+    }
+    
+    .stroke_entry_cancel_button {
+        width: 70%;
+        height: 80px;
+        line-height: 80px;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 2.1em;
+    }
+}

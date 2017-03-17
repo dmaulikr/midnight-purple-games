@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C0B59DB1B568811008322E4 /* name_entry.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B59DA1B568811008322E4 /* name_entry.css */; };
+		3C0B59DF1B56E547008322E4 /* stroke_entry.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B59DD1B56E547008322E4 /* stroke_entry.css */; };
+		3C0B59E11B56F301008322E4 /* areyousure_menu.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B59E01B56F301008322E4 /* areyousure_menu.css */; };
+		3C0B59E61B580745008322E4 /* golf_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B59E41B580745008322E4 /* golf_blur.png */; };
+		3C1EFFF71CDD45DF00DC4A43 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EFFF61CDD45DF00DC4A43 /* Export.swift */; };
+		3C283DAE1CAAEA2500B3694D /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C283DAB1CAAEA2500B3694D /* NSBundle.swift */; };
+		3C283DAF1CAAEA2500B3694D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C283DAC1CAAEA2500B3694D /* String.swift */; };
+		3C283DB01CAAEA2500B3694D /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C283DAD1CAAEA2500B3694D /* WKWebView.swift */; };
+		3C283DB21CAAEA7100B3694D /* css_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C283DB11CAAEA7100B3694D /* css_files.txt */; };
+		3C283DB41CAAEAA300B3694D /* js_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C283DB31CAAEAA300B3694D /* js_files.txt */; };
+		3C283DB61CAAEABF00B3694D /* image_files.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C283DB51CAAEABF00B3694D /* image_files.txt */; };
+		3C2B99161CAA866700CAF73E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2B99141CAA866700CAF73E /* Fabric.framework */; };
+		3C2B99171CAA866700CAF73E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2B99151CAA866700CAF73E /* Crashlytics.framework */; };
+		3C768DAE1B55548200232788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C768DAD1B55548200232788 /* AppDelegate.swift */; };
+		3C768DB01B55548200232788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C768DAF1B55548200232788 /* ViewController.swift */; };
+		3C768DB31B55548200232788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DB11B55548200232788 /* Main.storyboard */; };
+		3C768DB51B55548200232788 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DB41B55548200232788 /* Images.xcassets */; };
+		3C768DB81B55548200232788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DB61B55548200232788 /* LaunchScreen.xib */; };
+		3C768DC41B55548200232788 /* Score_CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C768DC31B55548200232788 /* Score_CardTests.swift */; };
+		3C768DE41B55573D00232788 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DD01B55573D00232788 /* style.css */; };
+		3C768DE51B55573D00232788 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DD21B55573D00232788 /* index.html */; };
+		3C768DE61B55573D00232788 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DD41B55573D00232788 /* main.js */; };
+		3C768DF51B55612700232788 /* menu.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DF41B55612700232788 /* menu.css */; };
+		3C768DF71B55710F00232788 /* scorecard.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C768DF61B55710F00232788 /* scorecard.css */; };
+		3C78ED791B966214004CEB1B /* archive.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C78ED781B966214004CEB1B /* archive.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C768DBE1B55548200232788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C768DA01B55548200232788 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C768DA71B55548200232788;
+			remoteInfo = "Score Card";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C0B59DA1B568811008322E4 /* name_entry.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = name_entry.css; sourceTree = "<group>"; };
+		3C0B59DD1B56E547008322E4 /* stroke_entry.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stroke_entry.css; sourceTree = "<group>"; };
+		3C0B59E01B56F301008322E4 /* areyousure_menu.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = areyousure_menu.css; sourceTree = "<group>"; };
+		3C0B59E41B580745008322E4 /* golf_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golf_blur.png; sourceTree = "<group>"; };
+		3C1EFFF61CDD45DF00DC4A43 /* Export.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Export.swift; sourceTree = "<group>"; };
+		3C283DAB1CAAEA2500B3694D /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
+		3C283DAC1CAAEA2500B3694D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		3C283DAD1CAAEA2500B3694D /* WKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebView.swift; sourceTree = "<group>"; };
+		3C283DB11CAAEA7100B3694D /* css_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css_files.txt; sourceTree = "<group>"; };
+		3C283DB31CAAEAA300B3694D /* js_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = js_files.txt; sourceTree = "<group>"; };
+		3C283DB51CAAEABF00B3694D /* image_files.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = image_files.txt; sourceTree = "<group>"; };
+		3C2B99141CAA866700CAF73E /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		3C2B99151CAA866700CAF73E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		3C768DA81B55548200232788 /* Score Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C768DAC1B55548200232788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C768DAD1B55548200232788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C768DAF1B55548200232788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C768DB21B55548200232788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C768DB41B55548200232788 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C768DB71B55548200232788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3C768DBD1B55548200232788 /* Score CardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score CardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C768DC21B55548200232788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C768DC31B55548200232788 /* Score_CardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score_CardTests.swift; sourceTree = "<group>"; };
+		3C768DD01B55573D00232788 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		3C768DD21B55573D00232788 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3C768DD41B55573D00232788 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		3C768DF41B55612700232788 /* menu.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = menu.css; sourceTree = "<group>"; };
+		3C768DF61B55710F00232788 /* scorecard.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = scorecard.css; sourceTree = "<group>"; };
+		3C78ED781B966214004CEB1B /* archive.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = archive.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C768DA51B55548200232788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C2B99171CAA866700CAF73E /* Crashlytics.framework in Frameworks */,
+				3C2B99161CAA866700CAF73E /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C768DBA1B55548200232788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0B59E21B580745008322E4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C283DB51CAAEABF00B3694D /* image_files.txt */,
+				3C0B59E41B580745008322E4 /* golf_blur.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3C768D9F1B55548200232788 = {
+			isa = PBXGroup;
+			children = (
+				3C768DAA1B55548200232788 /* Score Card */,
+				3C768DC01B55548200232788 /* Score CardTests */,
+				3C768DA91B55548200232788 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C768DA91B55548200232788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C768DA81B55548200232788 /* Score Card.app */,
+				3C768DBD1B55548200232788 /* Score CardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C768DAA1B55548200232788 /* Score Card */ = {
+			isa = PBXGroup;
+			children = (
+				3C768DAD1B55548200232788 /* AppDelegate.swift */,
+				3C768DAF1B55548200232788 /* ViewController.swift */,
+				3C283DAC1CAAEA2500B3694D /* String.swift */,
+				3C1EFFF61CDD45DF00DC4A43 /* Export.swift */,
+				3C283DAB1CAAEA2500B3694D /* NSBundle.swift */,
+				3C283DAD1CAAEA2500B3694D /* WKWebView.swift */,
+				3C768DD11B55573D00232788 /* HTML */,
+				3C768DCF1B55573D00232788 /* CSS */,
+				3C768DD31B55573D00232788 /* JavaScript */,
+				3C0B59E21B580745008322E4 /* Images */,
+				3C768DB41B55548200232788 /* Images.xcassets */,
+				3C768DB11B55548200232788 /* Main.storyboard */,
+				3C768DB61B55548200232788 /* LaunchScreen.xib */,
+				3C768DAB1B55548200232788 /* Supporting Files */,
+			);
+			path = "Score Card";
+			sourceTree = "<group>";
+		};
+		3C768DAB1B55548200232788 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C2B99141CAA866700CAF73E /* Fabric.framework */,
+				3C2B99151CAA866700CAF73E /* Crashlytics.framework */,
+				3C768DAC1B55548200232788 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C768DC01B55548200232788 /* Score CardTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C768DC31B55548200232788 /* Score_CardTests.swift */,
+				3C768DC11B55548200232788 /* Supporting Files */,
+			);
+			path = "Score CardTests";
+			sourceTree = "<group>";
+		};
+		3C768DC11B55548200232788 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C768DC21B55548200232788 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C768DCF1B55573D00232788 /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				3C283DB11CAAEA7100B3694D /* css_files.txt */,
+				3C768DD01B55573D00232788 /* style.css */,
+				3C768DF41B55612700232788 /* menu.css */,
+				3C0B59DA1B568811008322E4 /* name_entry.css */,
+				3C78ED781B966214004CEB1B /* archive.css */,
+				3C768DF61B55710F00232788 /* scorecard.css */,
+				3C0B59E01B56F301008322E4 /* areyousure_menu.css */,
+				3C0B59DD1B56E547008322E4 /* stroke_entry.css */,
+			);
+			path = CSS;
+			sourceTree = "<group>";
+		};
+		3C768DD11B55573D00232788 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				3C768DD21B55573D00232788 /* index.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		3C768DD31B55573D00232788 /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				3C283DB31CAAEAA300B3694D /* js_files.txt */,
+				3C768DD41B55573D00232788 /* main.js */,
+			);
+			path = JavaScript;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C768DA71B55548200232788 /* Score Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C768DC71B55548200232788 /* Build configuration list for PBXNativeTarget "Score Card" */;
+			buildPhases = (
+				3C768DA41B55548200232788 /* Sources */,
+				3C768DA51B55548200232788 /* Frameworks */,
+				3C768DA61B55548200232788 /* Resources */,
+				3C2B99131CAA865800CAF73E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Score Card";
+			productName = "Score Card";
+			productReference = 3C768DA81B55548200232788 /* Score Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C768DBC1B55548200232788 /* Score CardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C768DCA1B55548200232788 /* Build configuration list for PBXNativeTarget "Score CardTests" */;
+			buildPhases = (
+				3C768DB91B55548200232788 /* Sources */,
+				3C768DBA1B55548200232788 /* Frameworks */,
+				3C768DBB1B55548200232788 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C768DBF1B55548200232788 /* PBXTargetDependency */,
+			);
+			name = "Score CardTests";
+			productName = "Score CardTests";
+			productReference = 3C768DBD1B55548200232788 /* Score CardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C768DA01B55548200232788 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Midnight Purple Games";
+				TargetAttributes = {
+					3C768DA71B55548200232788 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2AQ59S82NU;
+					};
+					3C768DBC1B55548200232788 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3C768DA71B55548200232788;
+					};
+				};
+			};
+			buildConfigurationList = 3C768DA31B55548200232788 /* Build configuration list for PBXProject "Score Card" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C768D9F1B55548200232788;
+			productRefGroup = 3C768DA91B55548200232788 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C768DA71B55548200232788 /* Score Card */,
+				3C768DBC1B55548200232788 /* Score CardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C768DA61B55548200232788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0B59E61B580745008322E4 /* golf_blur.png in Resources */,
+				3C0B59DF1B56E547008322E4 /* stroke_entry.css in Resources */,
+				3C283DB61CAAEABF00B3694D /* image_files.txt in Resources */,
+				3C768DE51B55573D00232788 /* index.html in Resources */,
+				3C768DB31B55548200232788 /* Main.storyboard in Resources */,
+				3C768DF71B55710F00232788 /* scorecard.css in Resources */,
+				3C768DE41B55573D00232788 /* style.css in Resources */,
+				3C78ED791B966214004CEB1B /* archive.css in Resources */,
+				3C283DB41CAAEAA300B3694D /* js_files.txt in Resources */,
+				3C768DE61B55573D00232788 /* main.js in Resources */,
+				3C283DB21CAAEA7100B3694D /* css_files.txt in Resources */,
+				3C768DB81B55548200232788 /* LaunchScreen.xib in Resources */,
+				3C0B59DB1B568811008322E4 /* name_entry.css in Resources */,
+				3C768DB51B55548200232788 /* Images.xcassets in Resources */,
+				3C0B59E11B56F301008322E4 /* areyousure_menu.css in Resources */,
+				3C768DF51B55612700232788 /* menu.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C768DBB1B55548200232788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2B99131CAA865800CAF73E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run d58e5473d8255b20becdbf3cf109674acc9a7c05 84d597719862b9b66c172c617d975ec25dcd5e172c5a6aa03d64db092e32b5fe";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C768DA41B55548200232788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C283DB01CAAEA2500B3694D /* WKWebView.swift in Sources */,
+				3C283DAE1CAAEA2500B3694D /* NSBundle.swift in Sources */,
+				3C768DB01B55548200232788 /* ViewController.swift in Sources */,
+				3C283DAF1CAAEA2500B3694D /* String.swift in Sources */,
+				3C768DAE1B55548200232788 /* AppDelegate.swift in Sources */,
+				3C1EFFF71CDD45DF00DC4A43 /* Export.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C768DB91B55548200232788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C768DC41B55548200232788 /* Score_CardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C768DBF1B55548200232788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C768DA71B55548200232788 /* Score Card */;
+			targetProxy = 3C768DBE1B55548200232788 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C768DB11B55548200232788 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C768DB21B55548200232788 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C768DB61B55548200232788 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C768DB71B55548200232788 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C768DC51B55548200232788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C768DC61B55548200232788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C768DC81B55548200232788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Score Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.midnightpurplegames.minigolfscorecard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C768DC91B55548200232788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Score Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.midnightpurplegames.minigolfscorecard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3C768DCB1B55548200232788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Score CardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midnightpurplegames.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score Card.app/Score Card";
+			};
+			name = Debug;
+		};
+		3C768DCC1B55548200232788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Score CardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midnightpurplegames.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score Card.app/Score Card";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C768DA31B55548200232788 /* Build configuration list for PBXProject "Score Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C768DC51B55548200232788 /* Debug */,
+				3C768DC61B55548200232788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C768DC71B55548200232788 /* Build configuration list for PBXNativeTarget "Score Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C768DC81B55548200232788 /* Debug */,
+				3C768DC91B55548200232788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C768DCA1B55548200232788 /* Build configuration list for PBXNativeTarget "Score CardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C768DCB1B55548200232788 /* Debug */,
+				3C768DCC1B55548200232788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C768DA01B55548200232788 /* Project object */;
+}
