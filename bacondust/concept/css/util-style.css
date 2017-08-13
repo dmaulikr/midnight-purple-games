@@ -1,0 +1,25 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, textarea {
+    -webkit-user-select: text;
+}
+
+#everything-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "AppleSDGothicNeo-UltraLight";
+    background-color: #fff;
+}
+
+.concept {
+    padding-top: 200px;
+    text-align: center;
+}
