@@ -1,5 +1,0 @@
-blue_pig.png
-red_pig.png
-green_pig.png
-white_pig.png
-stars.png

@@ -1,6 +1,6 @@
 //
 //  Session.swift
-//  June 27, 2017
+//  August 16, 2017
 //  Caleb Hess
 //
 //  toolkit-swift
@@ -8,14 +8,16 @@
 
 import WebKit
 
-public class Session {
+class Session {
     var valid = false
     var userGUID = ""
     var userName = ""
+    var userFirstname = ""
+    var userLastname = ""
     var userPassword = ""
     var userRoles = [String]()
     
-    public init() {
+    init() {
         let defaults = UserDefaults.standard
         
         if let savedUserGUID = defaults.string(forKey: "session-userguid") {
@@ -38,7 +40,7 @@ public class Session {
         }
     }
     
-    public func login(_ callBack: @escaping (Bool) -> Void) {
+    func login(_ callBack: @escaping (Bool) -> Void) {
         if userName != "" && userPassword != "" {
             login(userName, password: userPassword, callBack: { success in
                 callBack(success)
@@ -48,7 +50,7 @@ public class Session {
         }
     }
     
-    public func login(_ username: String, password: String, callBack: @escaping (Bool) -> Void) {
+    func login(_ username: String, password: String, callBack: @escaping (Bool) -> Void) {
         SSO.auth(username: username, password: password, callBack: { response in
             let success = (response.statusCode < 400 && response.statusCode > 0)
             
@@ -59,6 +61,8 @@ public class Session {
                 self.valid = true
                 self.userName = username
                 self.userPassword = password
+                self.userFirstname = data.string("firstname")
+                self.userLastname = data.string("lastname")
                 self.userGUID = data.string("nameguid")
                 self.userRoles = []
                 
@@ -75,6 +79,10 @@ public class Session {
         })
     }
     
+    var userFullname: String {
+        return [userFirstname, userLastname].joined(separator: " ")
+    }
+    
     func updateUserDefaults() {
         let defaults = UserDefaults.standard
         defaults.set(userGUID, forKey: "session-userguid")
@@ -83,7 +91,7 @@ public class Session {
         defaults.set(userRoles.joined(separator: ","), forKey: "session-userroles")
     }
     
-    public func logout() {
+    func logout() {
         valid = false
         userGUID = ""
         userName = ""
